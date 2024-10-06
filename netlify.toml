@@ -1,0 +1,8 @@
+[build]
+  functions = "functions" # directory for serverless functions
+  publish = "public"      # directory for static files (if any)
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
