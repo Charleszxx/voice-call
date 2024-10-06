@@ -1,8 +1,9 @@
 [build]
   functions = "functions" # directory for serverless functions
-  publish = "public"      # directory for static files (if any)
+  # Remove the publish line if you don't have a public directory
+  # publish = "public"     
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/index.html" # Make sure to have an index.html in the public folder if you keep this line
   status = 200
